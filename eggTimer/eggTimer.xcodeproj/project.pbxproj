@@ -14,6 +14,9 @@
 		9C577AC52833D4B30000EC45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C577AC32833D4B30000EC45 /* LaunchScreen.storyboard */; };
 		9C577ACD2833E4720000EC45 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C577ACC2833E4720000EC45 /* SplashViewController.swift */; };
 		9C577ACF2833E4860000EC45 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C577ACE2833E4860000EC45 /* MainViewController.swift */; };
+		9C577AD428352B220000EC45 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C577AD228352B220000EC45 /* TutorialViewController.swift */; };
+		9C577AD528352B220000EC45 /* TutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C577AD328352B220000EC45 /* TutorialViewController.xib */; };
+		9C577AD728352B510000EC45 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C577AD628352B510000EC45 /* AlarmViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		9C577AC62833D4B30000EC45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C577ACC2833E4720000EC45 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		9C577ACE2833E4860000EC45 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9C577AD228352B220000EC45 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		9C577AD328352B220000EC45 /* TutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialViewController.xib; sourceTree = "<group>"; };
+		9C577AD628352B510000EC45 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 				9C577ABA2833D4B20000EC45 /* SceneDelegate.swift */,
 				9C577ACC2833E4720000EC45 /* SplashViewController.swift */,
 				9C577ACE2833E4860000EC45 /* MainViewController.swift */,
+				9C577AD228352B220000EC45 /* TutorialViewController.swift */,
+				9C577AD628352B510000EC45 /* AlarmViewController.swift */,
+				9C577AD328352B220000EC45 /* TutorialViewController.xib */,
 				9C577ABE2833D4B20000EC45 /* Main.storyboard */,
 				9C577AC12833D4B30000EC45 /* Assets.xcassets */,
 				9C577AC32833D4B30000EC45 /* LaunchScreen.storyboard */,
@@ -130,6 +139,7 @@
 			files = (
 				9C577AC52833D4B30000EC45 /* LaunchScreen.storyboard in Resources */,
 				9C577AC22833D4B30000EC45 /* Assets.xcassets in Resources */,
+				9C577AD528352B220000EC45 /* TutorialViewController.xib in Resources */,
 				9C577AC02833D4B20000EC45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +153,8 @@
 			files = (
 				9C577AB92833D4B20000EC45 /* AppDelegate.swift in Sources */,
 				9C577ABB2833D4B20000EC45 /* SceneDelegate.swift in Sources */,
+				9C577AD728352B510000EC45 /* AlarmViewController.swift in Sources */,
+				9C577AD428352B220000EC45 /* TutorialViewController.swift in Sources */,
 				9C577ACD2833E4720000EC45 /* SplashViewController.swift in Sources */,
 				9C577ACF2833E4860000EC45 /* MainViewController.swift in Sources */,
 			);

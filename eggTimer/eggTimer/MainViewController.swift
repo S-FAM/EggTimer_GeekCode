@@ -19,8 +19,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        selectBtnView.layer.cornerRadius = 15
-        lastRecordView.layer.cornerRadius = 15
+//        selectBtnView.layer.cornerRadius = 15
+        lastRecordView.layer.cornerRadius = 25
 
         statusLabel.text = "조리시간을 선택하세요"
         // Do any additional setup after loading the view.
