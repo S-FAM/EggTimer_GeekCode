@@ -28,12 +28,30 @@ class MainViewController: UIViewController {
     
     @IBAction func rareBtn(_ sender: Any) {
         print("반숙선택")
+        mainVcSegue()
+        
     }
     
     @IBAction func welldoneBtn(_ sender: Any) {
         print("완숙선택")
 
     }
+    
+    
+    
+    
+    
+    /// 유입제어 상태조회 뷰로 이동
+    /// - Parameters:
+    ///   - inflowData: 토큰발급API call 하고 나온 리턴값
+    ///   - useServerList: 서버 URL
+
+    
+    func mainVcSegue() {
+        print("performSegue : mainVcSegue")
+        self.performSegue(withIdentifier: "mainVcSegue", sender: self)
+    }
+
     /*
     // MARK: - Navigation
 

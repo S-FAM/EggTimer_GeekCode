@@ -22,11 +22,11 @@ class SplashViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        mainVcSegue()
+        splashVcSegue()
 
     }
     
-    func mainVcSegue() {
+    func splashVcSegue() {
         self.performSegue(withIdentifier: "splashVcSegue", sender: self)
     }
     /*

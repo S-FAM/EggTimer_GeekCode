@@ -15,7 +15,16 @@ class TutorialViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func dismissBtn(_ sender: Any) {
+        dismissViewController()
+        print("dismiss Clicked")
+    }
+    
+    
+     func dismissViewController() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

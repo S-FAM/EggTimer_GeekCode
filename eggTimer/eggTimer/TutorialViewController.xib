@@ -21,23 +21,37 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EggTimer_tutorial-1" translatesAutoresizingMaskIntoConstraints="NO" id="8Gc-6t-fn1">
                     <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49u-uF-gKk">
-                    <rect key="frame" x="354" y="59" width="45" height="31"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FME-Av-kx8">
+                    <rect key="frame" x="20" y="64.5" width="50" height="49"/>
                     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="FlU-tc-8iu"/>
+                        <constraint firstAttribute="height" constant="50" id="wce-WZ-w1D"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1r-KL-kfJ">
+                    <rect key="frame" x="20" y="64" width="50" height="50"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" image="xmark.circle.fill" catalog="system"/>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                    <connections>
+                        <action selector="dismissBtn:" destination="-1" eventType="touchUpInside" id="lZy-jr-Mcg"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="y1r-KL-kfJ" firstAttribute="leading" secondItem="FME-Av-kx8" secondAttribute="leading" id="2na-7y-z42"/>
+                <constraint firstItem="y1r-KL-kfJ" firstAttribute="top" secondItem="FME-Av-kx8" secondAttribute="top" id="Fof-xb-xhz"/>
                 <constraint firstItem="8Gc-6t-fn1" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="J2L-qJ-f2k"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8Gc-6t-fn1" secondAttribute="trailing" id="Mky-aB-J6W"/>
+                <constraint firstItem="FME-Av-kx8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Pgz-7w-5L8"/>
+                <constraint firstItem="y1r-KL-kfJ" firstAttribute="width" secondItem="FME-Av-kx8" secondAttribute="width" id="aMi-Lr-B1W"/>
                 <constraint firstItem="8Gc-6t-fn1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bTe-VX-nQz"/>
-                <constraint firstItem="49u-uF-gKk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="khg-DI-VYC"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="49u-uF-gKk" secondAttribute="trailing" constant="15" id="mbT-np-kOM"/>
                 <constraint firstAttribute="bottom" secondItem="8Gc-6t-fn1" secondAttribute="bottom" id="orv-HZ-KzJ"/>
+                <constraint firstItem="FME-Av-kx8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="rPh-uA-uAm"/>
                 <constraint firstItem="8Gc-6t-fn1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ucl-8j-FdQ"/>
+                <constraint firstItem="y1r-KL-kfJ" firstAttribute="height" secondItem="FME-Av-kx8" secondAttribute="height" id="vC0-4h-nYO"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="129.91071428571428"/>
         </view>

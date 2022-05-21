@@ -218,22 +218,23 @@
                         <outlet property="lastRecordView" destination="99k-Mf-85U" id="rU5-T8-oKp"/>
                         <outlet property="selectBtnView" destination="oLh-G9-Yok" id="Lju-dd-ngb"/>
                         <outlet property="statusLabel" destination="QL3-Tb-e28" id="4lZ-J7-7Uj"/>
+                        <segue destination="2gV-e2-fLh" kind="presentation" identifier="mainVcSegue" id="kWL-xA-JU7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I0K-qg-QAJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="934" y="114"/>
         </scene>
-        <!--View Controller-->
+        <!--Alarm View Controller-->
         <scene sceneID="JQM-0G-N39">
             <objects>
-                <viewController id="2gV-e2-fLh" sceneMemberID="viewController">
+                <viewController id="2gV-e2-fLh" customClass="AlarmViewController" customModule="eggTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BX8-QU-2df">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZaH-N3-nDj">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="548.66666666666663"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="513.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="남은시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQ1-1J-noo">
                                         <rect key="frame" x="30" y="30" width="73" height="26"/>
@@ -242,10 +243,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mBH-gO-ZkH">
-                                        <rect key="frame" x="39" y="425" width="312" height="4"/>
+                                        <rect key="frame" x="39" y="415" width="312" height="4"/>
                                     </progressView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swG-Pj-3NX">
-                                        <rect key="frame" x="39" y="153.66666666666663" width="312" height="241.33333333333337"/>
+                                        <rect key="frame" x="39" y="128.66666666666666" width="312" height="256.33333333333337"/>
                                         <color key="tintColor" systemColor="tintColor"/>
                                         <attributedString key="attributedText">
                                             <fragment content="12:30">
@@ -271,17 +272,17 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3x-l1-iEb">
-                                <rect key="frame" x="0.0" y="506.33333333333326" width="390" height="337.66666666666674"/>
+                                <rect key="frame" x="0.0" y="474" width="390" height="316"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="repeat.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="m7O-SZ-xo7">
-                                        <rect key="frame" x="47.333333333333329" y="102.3333333333333" width="135.33333333333337" height="133.66666666666669"/>
+                                        <rect key="frame" x="51.666666666666664" y="95.666666666666643" width="126.66666666666669" height="125.33333333333334"/>
                                         <color key="tintColor" systemColor="systemOrangeColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="m7O-SZ-xo7" secondAttribute="height" multiplier="1:1" id="cFC-Rc-S7C"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SvP-X2-GxT">
-                                        <rect key="frame" x="207.33333333333331" y="102.3333333333333" width="135.33333333333331" height="133.66666666666669"/>
+                                        <rect key="frame" x="211.66666666666666" y="95.666666666666643" width="126.66666666666666" height="125.33333333333334"/>
                                         <color key="tintColor" systemColor="systemOrangeColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="SvP-X2-GxT" secondAttribute="height" multiplier="1:1" id="spq-px-Asp"/>

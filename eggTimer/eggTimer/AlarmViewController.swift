@@ -9,13 +9,55 @@ import UIKit
 
 class AlarmViewController: UIViewController {
 
+    var timeRemaining: Int = 10
+    var timer: Timer!
+    
+    @IBOutlet weak var remainTimeLbl: UILabel!
+   
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        moveTutorialView()
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+                // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func playTapped(_ sender: Any) {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(operateTimer), userInfo: nil, repeats: true)
+    }
+    
+    @IBAction func pauseTapped(_ sender: Any) {
+        timer.invalidate()
+    }
+    
+    @IBAction func resetTapped(_ sender: Any) {
+        timer.invalidate()
+        timeRemaining = 10
+        remainTimeLbl.text = "\(timeRemaining)"
 
-        // Do any additional setup after loading the view.
+    }
+
+    @objc func operateTimer() {
+        if timeRemaining > 0 {
+            timeRemaining -= 1
+        } else {
+            timer.invalidate()
+            timeRemaining = 10
+        }
+        remainTimeLbl.text = "\(timeRemaining)"
     }
     
 
+    
+    
+    func moveTutorialView() {
+        let VC = TutorialViewController(nibName: "TutorialViewController", bundle: nil)
+            present(VC, animated: true, completion: nil)
+        }
     /*
     // MARK: - Navigation
 
