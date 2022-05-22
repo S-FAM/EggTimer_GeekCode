@@ -28,7 +28,7 @@ class MainViewController: UIViewController {
     
     @IBAction func rareBtn(_ sender: Any) {
         print("반숙선택")
-        mainVcSegue()
+//        mainVcSegue()
         
     }
     
@@ -38,6 +38,11 @@ class MainViewController: UIViewController {
     }
     
     
+    
+    
+    func movePresent() {
+        guard let uvc = self.storyboard?.instantiateViewController(withIdentifier: "123") else {return}
+    }
     
     
     

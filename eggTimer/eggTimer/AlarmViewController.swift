@@ -11,9 +11,11 @@ class AlarmViewController: UIViewController {
 
     var timeRemaining: Int = 10
     var timer: Timer!
+    var isStartAlarm: Bool = false
     
     @IBOutlet weak var remainTimeLbl: UILabel!
-   
+    @IBOutlet weak var playPauseImage: UIImageView!
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -23,11 +25,16 @@ class AlarmViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let image =  UIImage(named: "pause.circle.fill")
+        self.playPauseImage.image = image
+        image?.withTintColor(<#T##color: UIColor##UIColor#>)
                 // Do any additional setup after loading the view.
     }
     
     @IBAction func playTapped(_ sender: Any) {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(operateTimer), userInfo: nil, repeats: true)
+        
+        
     }
     
     @IBAction func pauseTapped(_ sender: Any) {
