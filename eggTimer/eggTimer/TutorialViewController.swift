@@ -9,9 +9,13 @@ import UIKit
 
 class TutorialViewController: UIViewController {
 
+    @IBOutlet weak var dismissBtn: UIButton!
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        Constants.isCheckTutorial = true
+        dismissBtn.setTitle("", for: .normal)
         // Do any additional setup after loading the view.
     }
 

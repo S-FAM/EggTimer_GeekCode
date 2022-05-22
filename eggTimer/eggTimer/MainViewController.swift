@@ -13,28 +13,28 @@ class MainViewController: UIViewController {
     @IBOutlet weak var selectBtnView: UIView!
     @IBOutlet weak var lastRecordView: UIView!
     
-    
-    
+    @IBOutlet weak var selectRareBtn: UIButton!
+    @IBOutlet weak var selectWelldoneBtn: UIButton!
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        selectBtnView.layer.cornerRadius = 15
+        selectRareBtn.setTitle("", for: .normal)
         lastRecordView.layer.cornerRadius = 25
-
         statusLabel.text = "조리시간을 선택하세요"
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func rareBtn(_ sender: Any) {
         print("반숙선택")
-//        mainVcSegue()
-        
+        Constants.selectedSeconds = selectType.rareType.rawValue
+        print("selectedSeconds: ",Constants.selectedSeconds)
     }
     
     @IBAction func welldoneBtn(_ sender: Any) {
         print("완숙선택")
-
+        Constants.selectedSeconds = selectType.welldoneType.rawValue
+        print("selectedSeconds: ",Constants.selectedSeconds)
     }
     
     
@@ -46,16 +46,6 @@ class MainViewController: UIViewController {
     
     
     
-    /// 유입제어 상태조회 뷰로 이동
-    /// - Parameters:
-    ///   - inflowData: 토큰발급API call 하고 나온 리턴값
-    ///   - useServerList: 서버 URL
-
-    
-    func mainVcSegue() {
-        print("performSegue : mainVcSegue")
-        self.performSegue(withIdentifier: "mainVcSegue", sender: self)
-    }
 
     /*
     // MARK: - Navigation

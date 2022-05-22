@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -51,7 +52,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조리시간을 선택하세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QL3-Tb-e28">
                                         <rect key="frame" x="30" y="88" width="187" height="26"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EggTimer_rare200 " translatesAutoresizingMaskIntoConstraints="NO" id="T0z-yw-cm6" userLabel="EggTimer_rare200">
@@ -68,6 +69,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="노른자가 흐르는 반숙">
                                                 <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" size="22" name="BMJUAOTF"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
@@ -80,6 +82,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="6분 30초">
                                                 <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" size="19" name="BMJUAOTF"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
@@ -92,6 +95,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="포들포들 삶아진 완숙">
                                                 <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" size="22" name="BMJUAOTF"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
@@ -104,6 +108,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="12분 30초">
                                                 <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <font key="NSFont" size="19" name="BMJUAOTF"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
@@ -117,6 +122,7 @@
                                         <buttonConfiguration key="configuration" style="plain"/>
                                         <connections>
                                             <action selector="rareBtn:" destination="Cvq-AV-RH2" eventType="touchUpInside" id="th4-Pd-r3x"/>
+                                            <action selector="selectRareBtn:" destination="NFY-6k-ysa" eventType="touchUpInside" id="Z5B-wu-JYP"/>
                                             <segue destination="2gV-e2-fLh" kind="show" id="Lsb-ic-BjB"/>
                                         </connections>
                                     </button>
@@ -164,13 +170,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지난 기록" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfC-8U-xxN">
                                         <rect key="frame" x="30" y="40.000000000000057" width="78" height="25"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022년 5월 18일" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLC-3q-Icd">
                                         <rect key="frame" x="30" y="265.66666666666669" width="330" height="32"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EggTimer_medium-1" translatesAutoresizingMaskIntoConstraints="NO" id="uj9-v0-y8G">
@@ -224,10 +230,13 @@
                     <connections>
                         <outlet property="lastRecordView" destination="99k-Mf-85U" id="rU5-T8-oKp"/>
                         <outlet property="selectBtnView" destination="oLh-G9-Yok" id="Lju-dd-ngb"/>
+                        <outlet property="selectRareBtn" destination="fks-bF-7BT" id="yxY-6z-895"/>
+                        <outlet property="selectWelldoneBtn" destination="AQJ-vy-DSK" id="WTX-4V-GwU"/>
                         <outlet property="statusLabel" destination="QL3-Tb-e28" id="4lZ-J7-7Uj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I0K-qg-QAJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="NFY-6k-ysa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1863.0769230769231" y="113.74407582938387"/>
         </scene>
@@ -240,16 +249,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZaH-N3-nDj">
-                                <rect key="frame" x="0.0" y="44" width="390" height="548.66666666666663"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="548.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="남은시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQ1-1J-noo">
-                                        <rect key="frame" x="30" y="54" width="73" height="26"/>
+                                        <rect key="frame" x="30" y="98" width="73" height="26"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swG-Pj-3NX">
-                                        <rect key="frame" x="30" y="224.66666666666671" width="330" height="99.333333333333343"/>
+                                        <rect key="frame" x="30" y="224.66666666666666" width="330" height="99.333333333333343"/>
                                         <color key="tintColor" systemColor="tintColor"/>
                                         <attributedString key="attributedText">
                                             <fragment content="12:30">
@@ -330,7 +339,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="c3x-l1-iEb" firstAttribute="height" secondItem="BX8-QU-2df" secondAttribute="height" multiplier="0.4" id="4VF-Qk-cya"/>
-                            <constraint firstItem="ZaH-N3-nDj" firstAttribute="top" secondItem="xvf-JY-OcU" secondAttribute="top" constant="-44" id="HOF-PH-fRi"/>
+                            <constraint firstItem="ZaH-N3-nDj" firstAttribute="top" secondItem="BX8-QU-2df" secondAttribute="top" id="HOF-PH-fRi"/>
                             <constraint firstAttribute="bottom" secondItem="c3x-l1-iEb" secondAttribute="bottom" id="Spe-dG-qgD"/>
                             <constraint firstItem="ZaH-N3-nDj" firstAttribute="height" secondItem="BX8-QU-2df" secondAttribute="height" multiplier="0.65" id="ap8-Z1-5HJ"/>
                             <constraint firstItem="ZaH-N3-nDj" firstAttribute="leading" secondItem="xvf-JY-OcU" secondAttribute="leading" id="nkJ-Fv-rCX"/>
@@ -343,7 +352,10 @@
                     <navigationItem key="navigationItem" title="타이머" id="Ejp-kl-CCc"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="playPauseBtn" destination="qGy-a8-mLa" id="EDs-tp-o1P"/>
                         <outlet property="playPauseImage" destination="SvP-X2-GxT" id="AHU-6R-GNd"/>
+                        <outlet property="remainTimeLbl" destination="swG-Pj-3NX" id="xwA-IB-lXy"/>
+                        <outlet property="resetBtn" destination="L9C-IS-NDr" id="OOK-kH-urT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PYF-rK-dZC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

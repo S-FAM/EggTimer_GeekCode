@@ -11,30 +11,43 @@ class AlarmViewController: UIViewController {
 
     var timeRemaining: Int = 10
     var timer: Timer!
-    var isStartAlarm: Bool = false
+    var seconds: Int = 0
+    var minutes: Int = 0
+    var customRecord: Int = 0
     
     @IBOutlet weak var remainTimeLbl: UILabel!
     @IBOutlet weak var playPauseImage: UIImageView!
     
-    
+    @IBOutlet weak var playPauseBtn: UIButton!
+    @IBOutlet weak var resetBtn: UIButton!
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        moveTutorialView()
+        
+        
+        if !Constants.isCheckTutorial {
+            moveTutorialView()
+        }
+
+        updateRemainTime()
+        print("remainTimeLbl.text : ",remainTimeLbl.text)
 
     }
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        let image =  UIImage(named: "pause.circle.fill")
-        self.playPauseImage.image = image
-        image?.withTintColor(<#T##color: UIColor##UIColor#>)
+        
+        playPauseBtn.setTitle("", for: .normal)
+        resetBtn.setTitle("", for: .normal)
+
+        self.playPauseImage.image = UIImage(systemName: "play.circle.fill")
+        self.playPauseImage.tintColor = UIColor.customDeepYellow()
+        //        image?.withTintColor(UIColor(red: 245, green: 167, blue: 58, alpha: 1))
                 // Do any additional setup after loading the view.
     }
     
     @IBAction func playTapped(_ sender: Any) {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(operateTimer), userInfo: nil, repeats: true)
-        
-        
     }
     
     @IBAction func pauseTapped(_ sender: Any) {
@@ -59,9 +72,26 @@ class AlarmViewController: UIViewController {
     }
     
 
+    func updateRemainTime() {
     
+        if Constants.selectedSeconds == selectType.rareType.rawValue {
+            timeRemaining = selectType.rareType.rawValue
+            remainTimeLbl.text = String(timeRemaining)
+
+        } else if Constants.selectedSeconds == selectType.welldoneType.rawValue {
+            timeRemaining = selectType.welldoneType.rawValue
+            remainTimeLbl.text = String(timeRemaining)
+
+        } else  if customRecord != 0 {
+            timeRemaining = customRecord
+            remainTimeLbl.text = String(timeRemaining)
+
+        }
+        
+    }
     
     func moveTutorialView() {
+        print("tutorial View Check")
         let VC = TutorialViewController(nibName: "TutorialViewController", bundle: nil)
             present(VC, animated: true, completion: nil)
         }
@@ -76,3 +106,6 @@ class AlarmViewController: UIViewController {
     */
 
 }
+
+
+
