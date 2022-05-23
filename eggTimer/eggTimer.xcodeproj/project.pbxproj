@@ -18,6 +18,7 @@
 		9C577AD428352B220000EC45 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C577AD228352B220000EC45 /* TutorialViewController.swift */; };
 		9C577AD528352B220000EC45 /* TutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C577AD328352B220000EC45 /* TutorialViewController.xib */; };
 		9C577AD728352B510000EC45 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C577AD628352B510000EC45 /* AlarmViewController.swift */; };
+		9C74F74A283BA17A008D28DF /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C74F749283BA17A008D28DF /* CommonMethods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		9C577AD228352B220000EC45 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		9C577AD328352B220000EC45 /* TutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialViewController.xib; sourceTree = "<group>"; };
 		9C577AD628352B510000EC45 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		9C74F749283BA17A008D28DF /* CommonMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				9C577AD228352B220000EC45 /* TutorialViewController.swift */,
 				9C577AD628352B510000EC45 /* AlarmViewController.swift */,
 				9C02AC26283A3C6A003C5984 /* Constant.swift */,
+				9C74F749283BA17A008D28DF /* CommonMethods.swift */,
 				9C577AD328352B220000EC45 /* TutorialViewController.xib */,
 				9C577ABE2833D4B20000EC45 /* Main.storyboard */,
 				9C577AC12833D4B30000EC45 /* Assets.xcassets */,
@@ -157,6 +160,7 @@
 				9C02AC27283A3C6A003C5984 /* Constant.swift in Sources */,
 				9C577AB92833D4B20000EC45 /* AppDelegate.swift in Sources */,
 				9C577ABB2833D4B20000EC45 /* SceneDelegate.swift in Sources */,
+				9C74F74A283BA17A008D28DF /* CommonMethods.swift in Sources */,
 				9C577AD728352B510000EC45 /* AlarmViewController.swift in Sources */,
 				9C577AD428352B220000EC45 /* TutorialViewController.swift in Sources */,
 				9C577ACD2833E4720000EC45 /* SplashViewController.swift in Sources */,

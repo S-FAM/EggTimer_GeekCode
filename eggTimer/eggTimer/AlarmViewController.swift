@@ -17,9 +17,11 @@ class AlarmViewController: UIViewController {
     
     @IBOutlet weak var remainTimeLbl: UILabel!
     @IBOutlet weak var playPauseImage: UIImageView!
+    @IBOutlet weak var pauseBtnImage: UIImageView!
     
     @IBOutlet weak var playPauseBtn: UIButton!
     @IBOutlet weak var resetBtn: UIButton!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -29,8 +31,7 @@ class AlarmViewController: UIViewController {
         }
 
         updateRemainTime()
-        print("remainTimeLbl.text : ",remainTimeLbl.text)
-
+        updateBtnImage()
     }
     
 
@@ -42,23 +43,28 @@ class AlarmViewController: UIViewController {
 
         self.playPauseImage.image = UIImage(systemName: "play.circle.fill")
         self.playPauseImage.tintColor = UIColor.customDeepYellow()
-        //        image?.withTintColor(UIColor(red: 245, green: 167, blue: 58, alpha: 1))
-                // Do any additional setup after loading the view.
+
     }
     
     @IBAction func playTapped(_ sender: Any) {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(operateTimer), userInfo: nil, repeats: true)
-    }
-    
-    @IBAction func pauseTapped(_ sender: Any) {
-        timer.invalidate()
+        if !(Constants.isStartAlarm) {
+            Constants.isStartAlarm = true
+
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(operateTimer), userInfo: nil, repeats: true)
+            print("playTapped")
+            updateBtnImage()
+        } else {
+            Constants.isStartAlarm = false
+            timer.invalidate()
+            print("pauseTapped")
+            updateBtnImage()
+        }
     }
     
     @IBAction func resetTapped(_ sender: Any) {
         timer.invalidate()
-        timeRemaining = 10
         remainTimeLbl.text = "\(timeRemaining)"
-
+        updateRemainTime()
     }
 
     @objc func operateTimer() {
@@ -66,11 +72,14 @@ class AlarmViewController: UIViewController {
             timeRemaining -= 1
         } else {
             timer.invalidate()
-            timeRemaining = 10
+            updateRemainTime()
+//            timeRemaining = 10
         }
         remainTimeLbl.text = "\(timeRemaining)"
     }
-    
+    func updateBtnImage() {
+        self.playPauseImage.image = Constants.isStartAlarm ?  UIImage(systemName: "pause.circle.fill") : UIImage(systemName: "play.circle.fill")
+    }
 
     func updateRemainTime() {
     
