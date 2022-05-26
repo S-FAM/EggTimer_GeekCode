@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SplashViewController" customModule="eggTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EggTimer_splash-1" translatesAutoresizingMaskIntoConstraints="NO" id="mZM-vj-VSQ">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -43,29 +43,29 @@
             <objects>
                 <viewController id="Cvq-AV-RH2" customClass="MainViewController" customModule="eggTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ea8-Jv-Zok">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oLh-G9-Yok">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="548.66666666666663"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="312"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조리시간을 선택하세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QL3-Tb-e28">
-                                        <rect key="frame" x="30" y="88" width="187" height="26"/>
+                                        <rect key="frame" x="30" y="44" width="187" height="26"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EggTimer_rare200 " translatesAutoresizingMaskIntoConstraints="NO" id="T0z-yw-cm6" userLabel="EggTimer_rare200">
-                                        <rect key="frame" x="10" y="183.33333333333334" width="137" height="137.00000000000003"/>
+                                        <rect key="frame" x="10" y="85" width="78" height="78"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="T0z-yw-cm6" secondAttribute="height" multiplier="1:1" id="StL-FH-uDZ"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EggTimer_welldone200" translatesAutoresizingMaskIntoConstraints="NO" id="HQi-CY-5gv">
-                                        <rect key="frame" x="10" y="350.33333333333331" width="137" height="137.33333333333331"/>
+                                        <rect key="frame" x="10" y="193" width="78" height="78"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECU-LZ-ecT">
-                                        <rect key="frame" x="147" y="224" width="183.66666666666663" height="25.666666666666657"/>
+                                        <rect key="frame" x="88" y="96" width="184" height="26"/>
                                         <attributedString key="attributedText">
                                             <fragment content="노른자가 흐르는 반숙">
                                                 <attributes>
@@ -78,7 +78,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWj-s9-Yv0">
-                                        <rect key="frame" x="204" y="259.66666666666669" width="70" height="22.333333333333314"/>
+                                        <rect key="frame" x="145" y="132" width="70" height="22.5"/>
                                         <attributedString key="attributedText">
                                             <fragment content="6분 30초">
                                                 <attributes>
@@ -91,7 +91,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NvT-9R-Gxv">
-                                        <rect key="frame" x="147" y="391.33333333333331" width="183.66666666666663" height="25.666666666666686"/>
+                                        <rect key="frame" x="88" y="204" width="184" height="26"/>
                                         <attributedString key="attributedText">
                                             <fragment content="포들포들 삶아진 완숙">
                                                 <attributes>
@@ -104,7 +104,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWe-nw-MhA">
-                                        <rect key="frame" x="198.66666666666666" y="427" width="80.666666666666657" height="22.333333333333314"/>
+                                        <rect key="frame" x="140" y="240" width="80.5" height="22.5"/>
                                         <attributedString key="attributedText">
                                             <fragment content="12분 30초">
                                                 <attributes>
@@ -117,7 +117,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fks-bF-7BT">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="274.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="156"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
                                         <connections>
@@ -127,7 +127,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQJ-vy-DSK">
-                                        <rect key="frame" x="0.0" y="274.33333333333337" width="390" height="274.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="156" width="320" height="156"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title=""/>
                                         <connections>
@@ -165,25 +165,25 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="99k-Mf-85U">
-                                <rect key="frame" x="0.0" y="506.33333333333326" width="390" height="337.66666666666674"/>
+                                <rect key="frame" x="0.0" y="288" width="320" height="192"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지난 기록" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfC-8U-xxN">
-                                        <rect key="frame" x="30" y="40.000000000000057" width="78" height="25"/>
+                                        <rect key="frame" x="30" y="40" width="78" height="25"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022년 5월 18일" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLC-3q-Icd">
-                                        <rect key="frame" x="30" y="265.66666666666669" width="330" height="32"/>
+                                        <rect key="frame" x="30" y="120" width="260" height="32"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EggTimer_medium-1" translatesAutoresizingMaskIntoConstraints="NO" id="uj9-v0-y8G">
-                                        <rect key="frame" x="126.33333333333333" y="112.66666666666669" width="137.33333333333337" height="137"/>
+                                        <rect key="frame" x="121" y="26" width="78" height="78"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71x-LJ-g0F">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="337.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="192"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title=""/>
                                         <connections>
@@ -245,20 +245,20 @@
             <objects>
                 <viewController id="2gV-e2-fLh" customClass="AlarmViewController" customModule="eggTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BX8-QU-2df">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZaH-N3-nDj">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="548.66666666666663"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="312"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="남은시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQ1-1J-noo">
-                                        <rect key="frame" x="30" y="98" width="73" height="26"/>
+                                        <rect key="frame" x="30" y="54" width="73" height="26"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swG-Pj-3NX">
-                                        <rect key="frame" x="30" y="224.66666666666663" width="330" height="99"/>
+                                        <rect key="frame" x="30" y="106.5" width="260" height="99"/>
                                         <color key="tintColor" systemColor="tintColor"/>
                                         <attributedString key="attributedText">
                                             <fragment content="12:30">
@@ -271,34 +271,41 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6so-M2-xjh">
+                                        <rect key="frame" x="246.5" y="51.5" width="43.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ellipsis" catalog="system"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96470588235294119" green="0.68627450980392157" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="swG-Pj-3NX" firstAttribute="centerX" secondItem="ZaH-N3-nDj" secondAttribute="centerX" id="76Z-hk-yDd"/>
+                                    <constraint firstItem="6so-M2-xjh" firstAttribute="centerY" secondItem="gQ1-1J-noo" secondAttribute="centerY" id="Gk5-XQ-WlJ"/>
                                     <constraint firstItem="swG-Pj-3NX" firstAttribute="centerY" secondItem="ZaH-N3-nDj" secondAttribute="centerY" id="Ncr-bl-l0o"/>
                                     <constraint firstItem="gQ1-1J-noo" firstAttribute="leading" secondItem="ZaH-N3-nDj" secondAttribute="leading" constant="30" id="NkV-3y-aRk"/>
+                                    <constraint firstAttribute="trailing" secondItem="6so-M2-xjh" secondAttribute="trailing" constant="30" id="WDA-M0-y3b"/>
                                     <constraint firstItem="swG-Pj-3NX" firstAttribute="leading" secondItem="ZaH-N3-nDj" secondAttribute="leading" constant="30" id="sjZ-Mq-7sf"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3x-l1-iEb">
-                                <rect key="frame" x="0.0" y="506.33333333333326" width="390" height="337.66666666666674"/>
+                                <rect key="frame" x="0.0" y="288" width="320" height="192"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="repeat.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="m7O-SZ-xo7">
-                                        <rect key="frame" x="47.333333333333329" y="102.3333333333333" width="135.33333333333337" height="133.66666666666669"/>
+                                        <rect key="frame" x="41.5" y="58" width="77" height="76"/>
                                         <color key="tintColor" red="0.96078431372549022" green="0.65490196078431373" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="m7O-SZ-xo7" secondAttribute="height" multiplier="1:1" id="cFC-Rc-S7C"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SvP-X2-GxT">
-                                        <rect key="frame" x="207.33333333333331" y="102.3333333333333" width="135.33333333333331" height="133.66666666666669"/>
+                                        <rect key="frame" x="201.5" y="58" width="77" height="76"/>
                                         <color key="tintColor" red="0.96078431372549022" green="0.65490196078431373" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="SvP-X2-GxT" secondAttribute="height" multiplier="1:1" id="spq-px-Asp"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGy-a8-mLa">
-                                        <rect key="frame" x="207.33333333333331" y="101.33333333333331" width="135.33333333333331" height="135"/>
+                                        <rect key="frame" x="201.5" y="57.5" width="77" height="77"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
                                         <connections>
@@ -306,7 +313,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9C-IS-NDr">
-                                        <rect key="frame" x="47.333333333333329" y="101.33333333333331" width="135.33333333333337" height="135"/>
+                                        <rect key="frame" x="41.5" y="57.5" width="77" height="77"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
                                         <connections>
@@ -362,13 +369,28 @@
             </objects>
             <point key="canvasLocation" x="2747.6923076923076" y="113.74407582938387"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="uDS-Lv-tGQ">
+            <objects>
+                <viewController id="3sy-Rt-qRS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nQI-Kk-yVn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gph-Wc-opQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eSj-0Y-971" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3525" y="114"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="yTz-1X-7o2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="90H-Hn-bKe" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ssT-ry-cTp">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -382,13 +404,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nyf-XX-eWr"/>
+        <segue reference="Cng-mD-MAX"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="EggTimer_medium-1" width="720" height="720"/>
         <image name="EggTimer_rare200 " width="720" height="720"/>
         <image name="EggTimer_splash-1" width="1242" height="2688"/>
         <image name="EggTimer_welldone200" width="200" height="200"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="play.circle.fill" catalog="system" width="128" height="121"/>
         <image name="repeat.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">

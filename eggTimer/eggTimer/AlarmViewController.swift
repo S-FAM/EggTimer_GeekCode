@@ -22,19 +22,6 @@ class AlarmViewController: UIViewController {
     @IBOutlet weak var playPauseBtn: UIButton!
     @IBOutlet weak var resetBtn: UIButton!
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        
-        if !Constants.isCheckTutorial {
-            moveTutorialView()
-        }
-
-        updateRemainTime()
-        updateBtnImage()
-    }
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,7 +30,17 @@ class AlarmViewController: UIViewController {
 
         self.playPauseImage.image = UIImage(systemName: "play.circle.fill")
         self.playPauseImage.tintColor = UIColor.customDeepYellow()
-
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
+        if !Constants.isCheckTutorial {
+            moveTutorialView()
+        }
+        updateRemainTime()
+        updateBtnImage()
     }
     
     @IBAction func playTapped(_ sender: Any) {
@@ -73,9 +70,10 @@ class AlarmViewController: UIViewController {
         } else {
             timer.invalidate()
             updateRemainTime()
-//            timeRemaining = 10
         }
-        remainTimeLbl.text = "\(timeRemaining)"
+        var stringValue = intToDigitFormatter(remainTime: timeRemaining)
+        remainTimeLbl.text = stringValue
+        
     }
     func updateBtnImage() {
         self.playPauseImage.image = Constants.isStartAlarm ?  UIImage(systemName: "pause.circle.fill") : UIImage(systemName: "play.circle.fill")
@@ -85,17 +83,38 @@ class AlarmViewController: UIViewController {
     
         if Constants.selectedSeconds == selectType.rareType.rawValue {
             timeRemaining = selectType.rareType.rawValue
-            remainTimeLbl.text = String(timeRemaining)
+//            remainTimeLbl.text = String(timeRemaining)
 
         } else if Constants.selectedSeconds == selectType.welldoneType.rawValue {
             timeRemaining = selectType.welldoneType.rawValue
-            remainTimeLbl.text = String(timeRemaining)
+//            remainTimeLbl.text = String(timeRemaining)
 
         } else  if customRecord != 0 {
             timeRemaining = customRecord
-            remainTimeLbl.text = String(timeRemaining)
 
         }
+        var stringValue = intToDigitFormatter(remainTime: timeRemaining)
+        remainTimeLbl.text = stringValue
+
+    }
+    
+    
+    
+    func intToDigitFormatter(remainTime: Int) -> String{
+        
+        let totalSeconds = remainTime
+        let minute = String(remainTime / 60)
+        let second = String(remainTime % 60)
+        
+        let currentMinute = (minute.count < 2) ? "0\(minute)" : minute
+        let currentSecond = (second.count < 2) ? "0\(second)" : second
+        
+        var array = [String]()
+        array.append(contentsOf: [(currentMinute), (currentSecond)])
+        let stringValue = array.joined(separator: ":")
+        print(totalSeconds, currentMinute, currentSecond, "array: ", array, stringValue)
+
+        return stringValue
         
     }
     

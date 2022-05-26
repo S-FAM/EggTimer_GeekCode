@@ -23,6 +23,7 @@ class MainViewController: UIViewController {
         selectRareBtn.setTitle("", for: .normal)
         lastRecordView.layer.cornerRadius = 25
         statusLabel.text = "조리시간을 선택하세요"
+        
     }
     
     @IBAction func rareBtn(_ sender: Any) {

@@ -10,7 +10,7 @@ import UIKit
 class TutorialViewController: UIViewController {
 
     @IBOutlet weak var dismissBtn: UIButton!
-    
+    // TODO: 더이상보지않기
 
     override func viewDidLoad() {
         super.viewDidLoad()

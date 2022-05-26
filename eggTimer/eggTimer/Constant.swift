@@ -11,6 +11,8 @@ import UIKit
 
 enum selectType: Int {
     case rareType = 390
+//    case rareType = 10
+
     case welldoneType = 750
 }
 
@@ -20,6 +22,7 @@ class Constants {
     /// default: rare
     static var customSeconds: Int = selectType.rareType.rawValue
     static var selectedSeconds: Int = selectType.rareType.rawValue
+    static var currentClockString: String = ""
 }
 
 
